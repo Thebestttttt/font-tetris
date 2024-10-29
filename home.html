@@ -16,43 +16,43 @@
             <nav>
                 <ul>
                     <li><a href="#section2">About</a></li>
-                    <li><a href="#section3">Game</a></li>
                     <li><a href="#section4">Poster</a></li>
                     <li><a href="#section5">Source Code</a></li>
                     <li><a href="#section6">Video Demo</a></li>
                     <li><a href="#section7">Member</a></li>
                 </ul>
             </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
-
+    
     <section id="section1">
         <div class="content">
-            <h1>Welcome to Our Website</h1>
-            <p>This is the homepage section.</p>
+            <div class="text-content">
+                <h2>PROJECT PHYSICAL COMPUTING</h2>
+                <p>โครงงานนี้เป็นประเภท Microcontroller ใช้ Keypad</p>
+                <p>ควบคุมการบังคับเกม แทน Keyboard ในการเล่น</p>
+            </div>
+            <div class="image-content">
+                <img src="image/Screenshot 2024-10-26 010407.png" alt="Project Image" class="project-image">
+            </div>
         </div>
     </section>
+    
 
     <section id="section2">
-        <div class="content">
-            <h1>About Us</h1>
-        </div>
+   
             <div class="gridsec2">
-                <div class="About">
-                    <div class="project-info">
-                        <h2>PROJECT PHYSICAL COMPUTING</h2>
-                        <p class="a1">โครงงานนี้เป็นประเภท Microcontroller ใช้ Keypad </p>
-                        <p class="a2">ควบคุมการบังคับ แทน Keyboard ในการเล่น</p>
-                    </div>
-                    <img src="image/Screenshot 2024-10-26 010407.png" alt="C" class="About-image">
-                </div>
                 <div class="abstract">
                     <h2>Abstract</h2>
-                    <p class="ab1">โครงงานนี้เป็นการใช้ Microcontroller ในการควบคุมการบังคับของเกม TETRIS </p>
-                    <P class="ab2" >ด้วยการใช้ Keypad แทนการใช้ keyboard ปกติในการเล่น เราจะใช้ปุ่มต่าง ๆ บน keypad<br>
-                    เป็นฟังก์ชันต่าง ๆ ของเกม TETRIS เช่น ปุ่มเลข 4 แทนการขยับทางด้านซ้าย, ปุ่มเลข 6 <br>
-                    แทนการขยับทางด้านขวา, ปุ่มตัวอักษร A แทนการลงของัววัตถุ, ปุ่มตัวอักษร B <br>
-                    แทนการหมุนของตัววัตถุ, ปุ่มตัวอักษร D แทนการเปลี่ยนไปวัตถุชิ้นต่อไป</p>
+                    <p class="ab1">โครงงานนี้เป็นการใช้ Microcontroller ในการควบคุมการบังคับของเกม TETRIS ด้วยการแสดงผลผ่าน</p>
+                    <P class="ab2" >doc matrix และควบคุมด้วย micro switch แทนการใช้ keyboard ปกติในการเล่น เราจะใช้ปุ่มต่างๆ <br>
+                    เป็นฟังก์ชันต่างๆของเกม TETRIS แทนการขยับทางด้านซ้าย, แทนการขยับทางด้านขวา, แทนการลงของวัตถุ, <br>
+                    แทนการหมุนของตัววัตถุ, แทนการเปลี่ยนไปวัตถุชิ้นต่อไป</p>
                 </div>
                 <div class="equipment">
                     <h2>อุปกรณ์</h2>
@@ -63,19 +63,18 @@
                         </div>
                         <div class="eq2">
                             <img src="image/keypad.png" alt="B" class="equipment-image">
-                            <p>Keypad</p>
+                            <p>dot matrix</p>
+                        </div>
+                        <div class="eq3">
+                            <img src="image/board.png" alt="A" class="equipment-image">
+                            <p>Board Arduino</p>
                         </div>
                     </div>
                 </div>
             </div>
     </section>
 
-    <section id="section3">
-        <div class="content">
-            <h1>Game</h1>
-            <p>We offer a variety of services to meet your needs.</p>
-        </div>
-    </section>
+    
 
     <section id="section4">
         <div class="content">
@@ -87,23 +86,25 @@
     </section>
 
     <section id="section5">
-        <div class="content">
-            <h1 class="sect5">Source Code</h1>
-            <img src="source_code.png" alt="Profile Image" class="profile-image">
+        <div class="content5">
+            <div class="src"><h1 class="sect5">Source Code</h1></div>
+            <div class="sec5low"><img src="image/Screenshot 2024-10-26 010555.png" alt="Profile Image" class="profile-image">
             <div class="button5">
                 <a href="https://github.com" target="_blank">
                     <button class="github-button">Github</button>
                 </a>
             </div>
+            </div>
         </div>
     </section>
 
     <section id="section6">
-        <div class="content">
+        <div class="content6">
             <h1 class="sect6">Video Demo</h1>
-            <video class="video"  autoplay muted poster="source_code.png">
-                <source src="video.mp4" type="video/mp4">
+            <div class="videoo"><video class="video"  poster="image/keypad.png" controls>
+                <source src="image/video.mov" type="video/mp4">
               </video>
+            </div>
         </div>
     </section>
 
@@ -117,7 +118,7 @@
                 </div>
                 <div class="member">
                     <img src="source_code.png" class="member-image" alt="Profile Image">
-                    <p>นางสาวสุขวัญ การุญ<br>รหัสนักศึกษา <strong>66070210</strong></p>
+                    <p>นางสาวสู่ขวัญ การุญ<br>รหัสนักศึกษา <strong>66070210</strong></p>
                 </div>
                 <div class="member">
                     <img src="source_code.png" class="member-image" alt="Profile Image">
@@ -125,10 +126,24 @@
                 </div>
                 <div class="member">
                     <img src="source_code.png" class="member-image" alt="Profile Image">
-                    <p>นายพงศกร ศรีเจริญ<br>รหัสนักศึกษา <strong>66070292</strong></p>
+                    <p>นายพงศกร ศรีเจริญ <br>รหัสนักศึกษา <strong>66070292</strong></p>
                 </div>
             </div>
         </div>
     </section>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const bar = document.querySelector('.bar');
+    
+        menuToggle.addEventListener('click', () => {
+            bar.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        window.onload = function () {
+        window.scrollTo(0, 0);
+         };
+    </script>
+    
 </body>
 </html>
